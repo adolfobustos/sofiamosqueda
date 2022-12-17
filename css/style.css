@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft Yi Baiti';
+    background-color: #f7f7f7;
+    margin: 20px;
+}
+
+body.background {
+    background-color: #f7f7f7;
+    background-image: url("data:image/svg+xml,%3Csvg width='600' height='600' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23eacda4' fill-opacity='0.8'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+h1, h2, h3, h4, p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 2px white;
+    color: #2980B9;
+}
+
+h2, h3, h4, p {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 19px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    text-indent: 10px;
+    letter-spacing: 1px;
+    line-height: 1.15;
+    padding-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.contenedor {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+    margin-inline: 20px;
+    background-color: #eacda4;
+    background: linear-gradient(to right, #eacda4, #ffffff);
+}
+
+h4 {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 1px 2px white;
+    color: #2980B9;
+}
+
+header a {
+    color: black;
+}
+
+.btn_menu {
+    clear: both;
+}
+
+nav {
+    max-width: 400px;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+nav.navegacion {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav.navegacion.show {
+    display: flex;
+}
+
+button {
+    width: 100%;
+    max-width: 360px;
+    max-height: 80px;
+    padding: 10px 15px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    border: 2px solid #bfbfbf;
+    background-color: rgb(41, 128, 185, 0.8);
+}
+
+button a {
+    font-size: 24px;
+}
+
+button:hover {
+    background-color: #2980B9;
+}
+
+.redes {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.redes a {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: black;
+}
+
+.redes a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+hgroup {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+figure {
+    font-size: 19px;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: black;
+    text-align: center;
+}
+
+figcaption a {
+    font-size: 19px;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: blue;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid #bfbfbf;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+figcaption a:hover {
+    color: blue;
+    text-decoration: underline;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+div.certificados {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+aside.polaroid {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+}
+
+div.certificados img {
+    max-width: 200px;
+    max-height: auto;
+    margin-bottom: 20px;
+    margin-inline: 20px;
+}
+
+aside.polaroid img {
+    max-width: 150px;
+    max-height: auto;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid #bfbfbf;
+    box-shadow: 10px 10px 30px black;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+div.certificados img.zoom:hover {
+    transform: scale(2);
+}
+
+aside.polaroid img.zoom:hover {
+    transform: scale(2);
+}
+
+.develop {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px;
+}
+
+.develop a {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: black;
+}
+
+.develop a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+@media (min-width: 800px) and (orientation: landscape) {
+
+    body.background {
+        background-color: #f7f7f7;
+        background-image: url("data:image/svg+xml,%3Csvg width='1200' height='1200' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23eacda4' fill-opacity='0.8'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .contenedor {
+        flex-direction: row;
+    }
+
+    .btn_menu {
+        display: none;
+    }
+
+    nav {
+        max-width: 800px;
+    }
+
+    nav.navegacion {
+        display: block;
+    }
+
+    footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .redes {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    div.certificados {
+        flex-direction: row;
+        margin-bottom: none;
+        justify-content: center;
+    }
+
+    aside.polaroid {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-height: 700px) and (orientation: landscape) {
+
+    body {
+        margin: 40px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2, h4 {
+        font-size: 30px;
+    }
+
+    h3, figcaption {
+        font-size: 25px;
+    }
+
+    p, a {
+        font-size: 24px;
+    }
+
+    button a {
+        font-size: 30px;
+    }
+
+    button {
+        max-width: 400px;
+    }
+
+    div.certificados img {
+        max-width: 300px;
+    }
+
+    aside.polaroid img {
+        max-width: 200px;
+    }
+}
+
+@media (min-height: 900px) and (orientation: landscape) {
+    body {
+        margin: 80px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2, h4 {
+        font-size: 40px;
+    }
+
+    h3, figcaption {
+        font-size: 30px;
+    }
+
+    p, a {
+        font-size: 29px;
+    }
+
+    button a {
+        font-size: 35px;
+    }
+
+    nav {
+        max-width: 900px;
+    }
+
+    button {
+        max-width: 500px;
+    }
+
+    .redes {
+        margin: 20px;
+    }
+
+    div.certificados img {
+        max-width: 400px;
+    }
+}
+
+/* ANIMACION AVION */
+.scene {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+}
+
+.plane,
+.cloud {
+    position: absolute;
+}
+
+.plane {
+    animation-duration: 1s;
+    animation-name: anim-plane;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    display: block;
+    margin: 0 auto;
+    transform: translateY(80px);
+    left: 30%;
+}
+
+@keyframes anim-plane {
+    to {
+        transform: translateY(95px);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes move {
+    from {
+        left: 200px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+.cloud {
+    animation-duration: 10s;
+    animation-name: move, fade;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    display: block;
+    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iY2xvdWQiIHZpZXdCb3g9IjAgMCA1MiA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI1MnB4IiBoZWlnaHQ9IjQwcHgiPgoJPGRlZnM+CgkJPGZpbHRlciBpZD0iZjEiIHg9Ii0xMDAlIiB5PSItMTAwJSIgd2lkdGg9IjMwMCUiIGhlaWdodD0iMzAwJSI+IAoJCQk8ZmVPZmZzZXQgcmVzdWx0PSJvdXQiIGluPSJTb3VyY2VHcmFwaGljIiBkeD0iMCIgZHk9IjEiLz4KCQkJPGZlQ29sb3JNYXRyaXggcmVzdWx0PSJvdXQiIGluPSJvdXQiIHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgIDAgMCAwIDAgMCAgMCAwIDAgMCAwICAwIDAgMCAwLjQgMCIvPgoJCQk8ZmVHYXVzc2lhbkJsdXIgcmVzdWx0PSJvdXQiIGluPSJvdXQiIHN0ZERldmlhdGlvbj0iMiIvPgoJCQk8ZmVCbGVuZCBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJvdXQiIG1vZGU9Im5vcm1hbCIgcmVzdWx0PSJkcCIvPgoJCTwvZmlsdGVyPgoJPC9kZWZzPiAKCTxwYXRoIGlkPSJmZy1jbG91ZCIgZmlsdGVyPSJ1cmwoI2YxKSIgZD0iTTYuMyAzNS4xQzQuNyAzNC4yLTAuNCAzMi4zIDEuNCAyNSAzLjEgMTguMSA4LjcgMTkuNSA4LjcgMTkuNSA4LjcgMTkuNSAzLjIgMTQuMSAxMC40IDYuOCAxNi45IDAuMiAyMy4xIDQuNiAyMy4xIDQuNiAyMy4xIDQuNiAzMC0xLjcgMzUuMiAyLjQgNDQuNiA5LjcgNDIuOCAyNS4zIDQyLjggMjUuMyA0Mi44IDI1LjMgNDggMjIuNiA0OS44IDI4LjYgNTEgMzIuNyA0NiAzNS44IDQyLjggMzYuNyAzOS43IDM3LjUgOC45IDM2LjYgNi4zIDM1LjFaIiBzdHJva2U9IiNjY2NjY2MiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0iI2ZmZmZmZiIvPgo8L3N2Zz4=);
+    height: 40px;
+    width: 53px;
+    margin: 0 auto;
+}
+
+.cloud--small {
+    animation-duration: 6s;
+    top: 65px;
+    transform: scaleX(0.5) scaleY(0.5);
+}
+
+.cloud--medium {
+    animation-duration: 5s;
+    animation-delay: 1s;
+    top: 95px;
+    transform: scaleX(0.7) scaleY(0.7);
+}
+
+.cloud--large {
+    animation-duration: 4.5s;
+    animation-delay: 2.5s;
+    top: 95px;
+    transform: scaleX(0.8) scaleY(0.8);
+}
+
+/* ANIMACION BORDE */
+:root {
+    --angle: 45deg;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.border {
+    --border-size: 5px;
+    border: var(--border-size) solid transparent;
+
+    border-image: conic-gradient(from var(--angle),
+            #e9c46a 0deg 90deg,
+            #f4a261 90deg 180deg,
+            #e76f51 180deg 270deg,
+            #619b8a 270deg 360deg) 1 stretch;
+}
+
+@supports (background: paint(houdini)) {
+
+    @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+
+    @keyframes rotate {
+        to {
+            --angle: 360deg;
+        }
+    }
+
+    .border {
+        animation: rotate 4s linear infinite;
+    }
+}
