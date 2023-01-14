@@ -114,6 +114,7 @@ nav.navegacion {
     width: 100%;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
 nav.navegacion.show {
@@ -176,16 +177,13 @@ figcaption a {
     font-weight: bold;
     padding: 10px 15px;
     color: blue;
+    text-decoration: underline;
     text-align: center;
-    border-radius: 20px;
-    border: 2px solid #bfbfbf;
-    background-color: rgb(255, 255, 255, 0.5);
 }
 
 figcaption a:hover {
     color: blue;
     text-decoration: underline;
-    background-color: rgb(255, 255, 255, 0.8);
 }
 
 img {
