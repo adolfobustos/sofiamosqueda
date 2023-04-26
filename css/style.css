@@ -7,13 +7,12 @@
 
 body {
     font-family: 'Microsoft Yi Baiti';
-    background-color: #f7f7f7;
-    background: linear-gradient(to right, #f7f7f7, #904e95);
-    margin: 20px;
+    background-color: white;
 }
 
 body.background {
     background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%23904e95' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+    margin: 20px;
 }
 
 h1, h2, h3, h4, p {
@@ -67,6 +66,39 @@ hgroup {
     margin-bottom: 20px;
 }
 
+.header {
+    background: linear-gradient(60deg, #904e95 0%, #00acc1 100%);
+    position: relative;
+}
+
+.header-content {
+    width: 100%;
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.waves {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-bottom: -7px;
+    /* Safari gap */
+    min-height: 40px;
+    max-height: 150px;
+}
+
+.footer {
+    position: relative;
+    background-color: white;
+}
+
+footer {
+    margin: 20px;
+}
+
 .contenedor {
     display: flex;
     width: 100%;
@@ -106,10 +138,6 @@ header a {
     color: black;
 }
 
-.btn_menu {
-    clear: both;
-}
-
 nav {
     max-width: 400px;
     margin: 20px;
@@ -117,15 +145,11 @@ nav {
 }
 
 nav.navegacion {
-    display: none;
+    display: flex;
     width: 100%;
     flex-direction: column;
     text-align: center;
     align-items: center;
-}
-
-nav.navegacion.show {
-    display: flex;
 }
 
 .redes {
@@ -194,7 +218,7 @@ img {
 }
 
 aside.polaroid {
-    display: none;
+    display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -269,20 +293,21 @@ div.certificados img.zoom:hover {
         background-image: url("data:image/svg+xml,%3Csvg width='800' height='800' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%23904e95' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
     }
 
+    .waves {
+        height: 15vh;
+        min-height: 100px;
+    }
+
+    .footer {
+        height: 20vh;
+    }
+
     .contenedor {
         flex-direction: row;
     }
 
-    .btn_menu {
-        display: none;
-    }
-
     nav {
         max-width: 800px;
-    }
-
-    nav.navegacion {
-        display: block;
     }
 
     footer {
@@ -297,7 +322,6 @@ div.certificados img.zoom:hover {
     }
 
     aside.polaroid {
-        display: flex;
         justify-content: center;
     }
 
@@ -310,7 +334,15 @@ div.certificados img.zoom:hover {
 
 @media (min-height: 700px) and (orientation: landscape) {
 
-    body {
+    body.background {
+        margin: 40px;
+    }
+
+    .header-content {
+        padding: 40px;
+    }
+
+    footer {
         margin: 40px;
     }
 
@@ -348,7 +380,16 @@ div.certificados img.zoom:hover {
 }
 
 @media (min-height: 900px) and (orientation: landscape) {
-    body {
+
+    body.background {
+        margin: 80px;
+    }
+
+    .header-content {
+        padding: 80px;
+    }
+
+    footer {
         margin: 80px;
     }
 
@@ -386,6 +427,42 @@ div.certificados img.zoom:hover {
 
     div.certificados img {
         max-width: 400px;
+    }
+}
+
+/* ANIMATION WAVES */
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
     }
 }
 
@@ -482,45 +559,4 @@ div.certificados img.zoom:hover {
     animation-delay: 2.5s;
     top: 95px;
     transform: scaleX(0.8) scaleY(0.8);
-}
-
-/* ANIMACION BORDE */
-:root {
-    --angle: 45deg;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-.border {
-    --border-size: 5px;
-    border: var(--border-size) solid transparent;
-
-    border-image: conic-gradient(from var(--angle),
-            #FCBF81 0deg 90deg,
-            #F8997C 90deg 180deg,
-            #E55600 180deg 270deg,
-            #00A99D 270deg 360deg) 1 stretch;
-}
-
-@supports (background: paint(houdini)) {
-
-    @property --angle {
-        syntax: "<angle>";
-        initial-value: 0deg;
-        inherits: false;
-    }
-
-    @keyframes rotate {
-        to {
-            --angle: 360deg;
-        }
-    }
-
-    .border {
-        animation: rotate 4s linear infinite;
-    }
 }
